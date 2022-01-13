@@ -1,0 +1,745 @@
+{
+	"info": {
+		"_postman_id": "35669bcf-43b8-4cc2-a0b6-ffd1428b0901",
+		"name": "Shubhaprada_updated",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ADMIN-LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "ip",
+						"value": "24454444",
+						"type": "text"
+					},
+					{
+						"key": "locale",
+						"value": "test",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobile\":\"9740313366\",\r\n    \"password\":\"Admin123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://shubhaprada.detrans.in/admin-login",
+					"protocol": "https",
+					"host": [
+						"shubhaprada",
+						"detrans",
+						"in"
+					],
+					"path": [
+						"admin-login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Member",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "ip",
+						"value": "24454444",
+						"type": "text"
+					},
+					{
+						"key": "locale",
+						"value": "test",
+						"type": "text"
+					},
+					{
+						"key": "userId",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "309e64b7481784153f2b407ed8c9e9d8e64b78fc3bc91bcbc7dc232ba8ec59e0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstName",
+							"value": "Sowmya",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "shree",
+							"type": "text"
+						},
+						{
+							"key": "fullName",
+							"value": "Sowmyashree",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "28-10-1989",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "F",
+							"type": "text"
+						},
+						{
+							"key": "addressLine1",
+							"value": "Mysore",
+							"type": "text"
+						},
+						{
+							"key": "addressLine2",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "pincode",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Mysore",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "KA",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "INDIA",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "9740313967",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "sowmya@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "profilePic",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://shubhaprada.detrans.in/add-member",
+					"protocol": "https",
+					"host": [
+						"shubhaprada",
+						"detrans",
+						"in"
+					],
+					"path": [
+						"add-member"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Members",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "ip",
+						"value": "24454444",
+						"type": "text"
+					},
+					{
+						"key": "locale",
+						"value": "test",
+						"type": "text"
+					},
+					{
+						"key": "userId",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "309e64b7481784153f2b407ed8c9e9d8e64b78fc3bc91bcbc7dc232ba8ec59e0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://shubhaprada.detrans.in/members/5",
+					"protocol": "https",
+					"host": [
+						"shubhaprada",
+						"detrans",
+						"in"
+					],
+					"path": [
+						"members",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update-Member",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "ip",
+						"value": "24454444",
+						"type": "text"
+					},
+					{
+						"key": "locale",
+						"value": "test",
+						"type": "text"
+					},
+					{
+						"key": "userId",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "309e64b7481784153f2b407ed8c9e9d8e64b78fc3bc91bcbc7dc232ba8ec59e0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstName",
+							"value": "Sowmya",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "shree",
+							"type": "text"
+						},
+						{
+							"key": "fullName",
+							"value": "SowmyashreeLR",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "28-10-1989",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "F",
+							"type": "text"
+						},
+						{
+							"key": "addressLine1",
+							"value": "Mysore",
+							"type": "text"
+						},
+						{
+							"key": "addressLine2",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "pincode",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Mysore",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "KA",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "INDIA",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "9740313967",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "sowmya@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "profilePic",
+							"value": "",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://shubhaprada.detrans.in/update-member/2",
+					"protocol": "https",
+					"host": [
+						"shubhaprada",
+						"detrans",
+						"in"
+					],
+					"path": [
+						"update-member",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get-All-Members",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "ip",
+						"value": "24454444",
+						"type": "text"
+					},
+					{
+						"key": "locale",
+						"value": "test",
+						"type": "text"
+					},
+					{
+						"key": "userId",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "309e64b7481784153f2b407ed8c9e9d8e64b78fc3bc91bcbc7dc232ba8ec59e0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://shubhaprada.detrans.in/get-members",
+					"protocol": "https",
+					"host": [
+						"shubhaprada",
+						"detrans",
+						"in"
+					],
+					"path": [
+						"get-members"
+					],
+					"query": [
+						{
+							"key": "ip",
+							"value": "24454444",
+							"disabled": true
+						},
+						{
+							"key": "locale",
+							"value": "test",
+							"disabled": true
+						},
+						{
+							"key": "userId",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete-Member",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "ip",
+						"value": "24454444",
+						"type": "text"
+					},
+					{
+						"key": "locale",
+						"value": "test",
+						"type": "text"
+					},
+					{
+						"key": "userId",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "309e64b7481784153f2b407ed8c9e9d8e64b78fc3bc91bcbc7dc232ba8ec59e0",
+						"type": "text"
+					},
+					{
+						"key": "memberId",
+						"value": "3",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://shubhaprada.detrans.in/delete-member",
+					"protocol": "https",
+					"host": [
+						"shubhaprada",
+						"detrans",
+						"in"
+					],
+					"path": [
+						"delete-member"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add-Scheme",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "ip",
+						"value": "24454444",
+						"type": "text"
+					},
+					{
+						"key": "locale",
+						"value": "test",
+						"type": "text"
+					},
+					{
+						"key": "userId",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "309e64b7481784153f2b407ed8c9e9d8e64b78fc3bc91bcbc7dc232ba8ec59e0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"schemeName\":\"Scheme1\",\r\n    \"schemeAmount\":\"30000\",\r\n    \"noOfEMI\":\"15\",\r\n    \"description\":\"test\"\r\n    \r\n    \r\n     \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://shubhaprada.detrans.in/add-scheme",
+					"protocol": "https",
+					"host": [
+						"shubhaprada",
+						"detrans",
+						"in"
+					],
+					"path": [
+						"add-scheme"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit-Scheme",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "ip",
+						"value": "24454444",
+						"type": "text"
+					},
+					{
+						"key": "locale",
+						"value": "test",
+						"type": "text"
+					},
+					{
+						"key": "userId",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "309e64b7481784153f2b407ed8c9e9d8e64b78fc3bc91bcbc7dc232ba8ec59e0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://shubhaprada.detrans.in/edit-scheme/1",
+					"protocol": "https",
+					"host": [
+						"shubhaprada",
+						"detrans",
+						"in"
+					],
+					"path": [
+						"edit-scheme",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update-Scheme",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "ip",
+						"value": "24454444",
+						"type": "text",
+						"equals": true
+					},
+					{
+						"key": "locale",
+						"value": "test",
+						"type": "text",
+						"equals": true
+					},
+					{
+						"key": "userId",
+						"value": "1",
+						"type": "text",
+						"equals": true
+					},
+					{
+						"key": "token",
+						"value": "309e64b7481784153f2b407ed8c9e9d8e64b78fc3bc91bcbc7dc232ba8ec59e0",
+						"type": "text",
+						"equals": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "schemeName",
+							"value": "Scheme Test",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Test",
+							"type": "text"
+						},
+						{
+							"key": "noOfEMI",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "schemeAmount",
+							"value": "12000",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://shubhaprada.detrans.in/update-scheme/2",
+					"protocol": "https",
+					"host": [
+						"shubhaprada",
+						"detrans",
+						"in"
+					],
+					"path": [
+						"update-scheme",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get-All-Scheme",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "ip",
+						"value": "24454444",
+						"type": "text",
+						"equals": true
+					},
+					{
+						"key": "locale",
+						"value": "test",
+						"type": "text",
+						"equals": true
+					},
+					{
+						"key": "userId",
+						"value": "1",
+						"type": "text",
+						"equals": true
+					},
+					{
+						"key": "token",
+						"value": "309e64b7481784153f2b407ed8c9e9d8e64b78fc3bc91bcbc7dc232ba8ec59e0",
+						"type": "text",
+						"equals": true
+					}
+				],
+				"url": {
+					"raw": "https://shubhaprada.detrans.in/get-scheme",
+					"protocol": "https",
+					"host": [
+						"shubhaprada",
+						"detrans",
+						"in"
+					],
+					"path": [
+						"get-scheme"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete-Scheme",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "ip",
+						"value": "24454444",
+						"type": "text",
+						"equals": true
+					},
+					{
+						"key": "locale",
+						"value": "test",
+						"type": "text",
+						"equals": true
+					},
+					{
+						"key": "userId",
+						"value": "1",
+						"type": "text",
+						"equals": true
+					},
+					{
+						"key": "token",
+						"value": "309e64b7481784153f2b407ed8c9e9d8e64b78fc3bc91bcbc7dc232ba8ec59e0",
+						"type": "text",
+						"equals": true
+					},
+					{
+						"key": "SchemeID",
+						"value": "2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://shubhaprada.detrans.in/delete-scheme",
+					"protocol": "https",
+					"host": [
+						"shubhaprada",
+						"detrans",
+						"in"
+					],
+					"path": [
+						"delete-scheme"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
